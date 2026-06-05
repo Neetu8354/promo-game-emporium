@@ -1,0 +1,22 @@
+# Lotus365 IDs Support
+
+> Lotus365 IDs Support helps Indian players get a fast cricket ID, casino login help, KYC guidance, bonus claim assistance, and instant withdrawal support — all over 24x7 WhatsApp.
+
+Lotus365 IDs is an India-focused support portal for online cricket betting IDs and casino accounts. It covers account creation, login troubleshooting, UPI deposits and withdrawals, KYC verification, bonus claims, and IPL betting guidance. Users connect with the team directly on WhatsApp.
+
+## Pages
+
+- [Home](/): Overview of Lotus365 IDs support, services, and WhatsApp contact.
+- [Cricket ID Creation](/cricket-id): Step-by-step guide to get an online cricket ID in India for IPL 2026.
+- [Lotus365 Live Login Guide](/lotus365live-login-guide): Detailed login walkthrough and troubleshooting.
+- [Lotus Exchange](/lotusexchange): Info about the Lotus Exchange platform and ID support.
+- [Lotus Cricket](/lotus-cricket): Cricket betting markets, IPL coverage, and account help.
+- [App Download](/app-download): How to download and install the Lotus365 app safely.
+- [About Us](/about-us): Who we are and how Lotus365 IDs support works.
+- [Contact Us](/contact-us): Reach support over WhatsApp 24x7.
+- [Blog](/blog): Guides on cricket IDs, UPI deposits, withdrawals, KYC, bonuses, and IPL betting.
+
+## Optional
+
+- [Login](/login): Login landing page.
+- [Signup](/signup): New ID signup landing page.
