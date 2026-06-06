@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://lotus365ids.live/sitemap.xml
+Sitemap: https://www.lotus365ids.live/sitemap.xml
