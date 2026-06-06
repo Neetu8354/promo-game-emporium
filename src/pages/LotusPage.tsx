@@ -1,5 +1,6 @@
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import SEO from "@/components/SEO";
@@ -12,6 +13,18 @@ import whatsappScreen from "@/assets/official-lotus365/whatsapp-screen.png";
 
 const whatsappUrl = "https://wa.link/reddyanna_";
 const siteUrl = "https://www.lotus365ids.live";
+
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "Login", href: "/login" },
+  { label: "Sign Up", href: "/signup" },
+  { label: "App Download", href: "/app-download" },
+  { label: "About Us", href: "/about-us" },
+  { label: "Lotusexchange", href: "/lotusexchange" },
+  { label: "Lotus Cricket", href: "/lotus-cricket" },
+  { label: "Blogs", href: "/blog" },
+  { label: "Contact Us", href: "/contact-us" },
+];
 
 const pages = {
   login: {
@@ -100,6 +113,7 @@ type PageKey = keyof typeof pages;
 
 const LotusPage = ({ pageKey }: { pageKey: PageKey }) => {
   const page = pages[pageKey];
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <main className="min-h-screen bg-background pb-28 text-foreground">
@@ -107,9 +121,26 @@ const LotusPage = ({ pageKey }: { pageKey: PageKey }) => {
       <header className="sticky top-0 z-40 border-b border-border bg-background/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-[1180px] items-center justify-between gap-3 px-4 sm:px-6 lg:px-8">
           <Link to="/" className="text-2xl font-black uppercase leading-none tracking-normal"><span>LOTUS </span><span className="text-primary">365</span></Link>
-          <Button asChild variant="secondary" className="rounded-md font-black text-secondary-foreground">
-            <a href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle className="!size-5" />Whatsapp</a>
-          </Button>
+          <nav className="hidden items-center gap-4 text-sm font-medium lg:flex" aria-label="Main navigation">
+            {navItems.map((item) => <Link key={item.label} to={item.href} className="hover:text-primary">{item.label}</Link>)}
+          </nav>
+          <div className="flex items-center gap-2">
+            <Button asChild variant="whatsapp" size="icon" className="rounded-md lg:hidden">
+              <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp Lotus365 IDs"><MessageCircle className="size-6" /></a>
+            </Button>
+            <Button asChild variant="gold" className="hidden rounded-xl px-4 py-2 font-black lg:flex">
+              <Link to="/login">Login</Link>
+            </Button>
+            <button type="button" onClick={() => setMenuOpen((open) => !open)} className="grid size-10 shrink-0 place-items-center rounded-md bg-card lg:hidden" aria-label="Toggle mobile menu">
+              {menuOpen ? <X className="size-6" /> : <Menu className="size-6" />}
+            </button>
+          </div>
+          {menuOpen && (
+            <nav className="absolute right-3 top-16 grid w-[min(18rem,calc(100vw-1.5rem))] gap-1 rounded-md border border-border bg-card p-2 text-base font-medium shadow-panel lg:hidden" aria-label="Mobile navigation">
+              {navItems.map((item) => <Link key={item.label} to={item.href} onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">{item.label}</Link>)}
+              <a href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">WhatsApp Support</a>
+            </nav>
+          )}
         </div>
       </header>
 
