@@ -81,7 +81,7 @@ const Index = () => {
       <SEO
         title="Lotus365 ID | Online Cricket Betting, Casino Games & Sports Betting India"
         description="Explore Lotus365 ID for online cricket betting, live casino games, Teen Patti, Aviator, and sports betting in India. Discover gaming guides, betting markets, and popular game categories."
-        canonical="https://lotus365ids.live/"
+        canonical="https://www.lotus365ids.live/"
         keywords="Lotus365 ID, online cricket betting India, live casino games, Teen Patti, Aviator, sports betting India, IPL betting, cricket betting markets"
         schema={{
           "@context": "https://schema.org",
@@ -89,21 +89,21 @@ const Index = () => {
             {
               "@type": "WebSite",
               "name": "Lotus365 ID",
-              "url": "https://lotus365ids.live/",
+              "url": "https://www.lotus365ids.live/",
               "alternateName": "www.lotus365ids.live",
-              "sameAs": ["https://lotus365ids.live/", "https://www.lotus365ids.live/"],
+              "sameAs": ["https://www.lotus365ids.live/"],
               "description": "Explore Lotus365 ID for online cricket betting, live casino games, Teen Patti, Aviator, and sports betting in India.",
               "inLanguage": "en-IN",
               "potentialAction": {
                 "@type": "SearchAction",
-                "target": "https://lotus365ids.live/?q={search_term_string}",
+                "target": "https://www.lotus365ids.live/?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
             },
             {
               "@type": "BreadcrumbList",
               "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://lotus365ids.live/" }
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.lotus365ids.live/" }
               ]
             }
           ]

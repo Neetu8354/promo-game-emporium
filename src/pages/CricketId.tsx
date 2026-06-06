@@ -6,7 +6,7 @@ import cricketLive from "@/assets/cricket-live-section.jpg";
 import casinoBanner from "@/assets/casino-games-banner.jpg";
 
 const whatsappUrl = "https://wa.link/reddyanna_";
-const canonical = "https://lotus365ids.live/cricket-id";
+const canonical = "https://www.lotus365ids.live/cricket-id";
 
 const faqs = [
   { q: "What is an online cricket ID?", a: "An online cricket ID is a verified player account on a licensed betting exchange that lets you place real-money bets on live cricket matches, IPL, T20, and international fixtures. With Lotus365 IDs, your cricket ID is issued on WhatsApp in under 2 minutes and unlocks match odds, session markets, fancy bets, live casino, and instant UPI cashouts." },
@@ -95,8 +95,8 @@ const CricketId = () => (
             mainEntityOfPage: canonical,
             articleSection: "Cricket ID Creation",
             inLanguage: "en-IN",
-            author: { "@type": "Organization", name: "Lotus365 IDs", url: "https://lotus365ids.live/" },
-            publisher: { "@type": "Organization", name: "Lotus365 IDs", url: "https://lotus365ids.live/" },
+            author: { "@type": "Organization", name: "Lotus365 IDs", url: "https://www.lotus365ids.live/" },
+            publisher: { "@type": "Organization", name: "Lotus365 IDs", url: "https://www.lotus365ids.live/" },
             datePublished: "2026-01-01",
             dateModified: "2026-06-01",
           },
@@ -118,7 +118,7 @@ const CricketId = () => (
           {
             "@type": "BreadcrumbList",
             itemListElement: [
-              { "@type": "ListItem", position: 1, name: "Home", item: "https://lotus365ids.live/" },
+              { "@type": "ListItem", position: 1, name: "Home", item: "https://www.lotus365ids.live/" },
               { "@type": "ListItem", position: 2, name: "Online Cricket ID", item: canonical },
             ],
           },

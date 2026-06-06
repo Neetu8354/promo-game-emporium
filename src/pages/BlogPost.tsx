@@ -22,7 +22,7 @@ const BlogPost = () => {
       <SEO
         title={`${post.seoTitle} | Lotus365 IDs`}
         description={post.description}
-        canonical={`https://lotus365ids.live/blog/${post.slug}`}
+        canonical={`https://www.lotus365ids.live/blog/${post.slug}`}
         keywords={post.keywords.join(", ")}
         schema={{
           "@context": "https://schema.org",
@@ -31,14 +31,14 @@ const BlogPost = () => {
               "@type": "BlogPosting",
               headline: post.title,
               description: post.description,
-              url: `https://lotus365ids.live/blog/${post.slug}`,
+              url: `https://www.lotus365ids.live/blog/${post.slug}`,
               image: "https://storage.googleapis.com/gpt-engineer-file-uploads/attachments/og-images/6d4d9b19-74ce-4cce-b064-9146234b15f0",
-              mainEntityOfPage: `https://lotus365ids.live/blog/${post.slug}`,
+              mainEntityOfPage: `https://www.lotus365ids.live/blog/${post.slug}`,
               articleSection: "Lotus365 IDs support",
               keywords: post.keywords,
               inLanguage: "en-IN",
-              author: { "@type": "Organization", name: "Lotus365 IDs", url: "https://lotus365ids.live/" },
-              publisher: { "@type": "Organization", name: "Lotus365 IDs", url: "https://lotus365ids.live/" },
+              author: { "@type": "Organization", name: "Lotus365 IDs", url: "https://www.lotus365ids.live/" },
+              publisher: { "@type": "Organization", name: "Lotus365 IDs", url: "https://www.lotus365ids.live/" },
               datePublished: "2026-01-01",
               dateModified: "2026-06-01",
             },

@@ -11,7 +11,7 @@ import bonusImage from "@/assets/official-lotus365/bonuses.png";
 import whatsappScreen from "@/assets/official-lotus365/whatsapp-screen.png";
 
 const whatsappUrl = "https://wa.link/reddyanna_";
-const siteUrl = "https://lotus365ids.live";
+const siteUrl = "https://www.lotus365ids.live";
 
 const pages = {
   login: {

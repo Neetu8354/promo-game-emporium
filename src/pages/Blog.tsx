@@ -11,22 +11,22 @@ const Blog = () => (
     <SEO
       title="Lotus365 IDs Blog | Login, Cricket ID & Casino Help"
       description="Read Lotus365 IDs blog guides for login help, cricket ID support, casino access, KYC, bonus claims, withdrawals, and 24x7 gaming assistance."
-      canonical="https://lotus365ids.live/blog"
+      canonical="https://www.lotus365ids.live/blog"
       schema={{
         "@context": "https://schema.org",
         "@graph": [
           {
             "@type": "WebPage",
             name: "Lotus365 IDs Blog | Login, Cricket ID & Casino Help",
-            url: "https://lotus365ids.live/blog",
+            url: "https://www.lotus365ids.live/blog",
             description: "Read Lotus365 IDs blog guides for login help, cricket ID support, casino access, KYC, bonus claims, withdrawals, and 24x7 gaming assistance.",
             inLanguage: "en-IN",
-            isPartOf: { "@type": "WebSite", url: "https://lotus365ids.live/" },
+            isPartOf: { "@type": "WebSite", url: "https://www.lotus365ids.live/" },
             breadcrumb: {
               "@type": "BreadcrumbList",
               itemListElement: [
-                { "@type": "ListItem", position: 1, name: "Home", item: "https://lotus365ids.live/" },
-                { "@type": "ListItem", position: 2, name: "Blog", item: "https://lotus365ids.live/blog" },
+                { "@type": "ListItem", position: 1, name: "Home", item: "https://www.lotus365ids.live/" },
+                { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.lotus365ids.live/blog" },
               ],
             },
           },
@@ -36,7 +36,7 @@ const Blog = () => (
             itemListElement: blogPosts.map((post, index) => ({
               "@type": "ListItem",
               position: index + 1,
-              url: `https://lotus365ids.live/blog/${post.slug}`,
+              url: `https://www.lotus365ids.live/blog/${post.slug}`,
               name: post.title,
             })),
           },

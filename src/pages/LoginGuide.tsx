@@ -20,7 +20,7 @@ const LoginGuide = () => (
     <SEO
       title="Lotus365 IDs Login Guide | New ID & KYC Support"
       description="Lotus365 IDs login guide for new ID support, cricket betting account access, casino login help, KYC issues, bonus claims, and withdrawals."
-      canonical="https://lotus365ids.live/lotus365live-login-guide"
+      canonical="https://www.lotus365ids.live/lotus365live-login-guide"
       schema={{
         "@context": "https://schema.org",
         "@type": "HowTo",
