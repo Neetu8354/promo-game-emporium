@@ -143,7 +143,6 @@ const Index = () => {
             {menuOpen && (
               <nav className="absolute right-3 top-16 grid w-[min(18rem,calc(100vw-1.5rem))] gap-1 rounded-md border border-border bg-card p-2 text-base font-medium shadow-panel lg:hidden" aria-label="Mobile navigation">
                 {navItems.map((item) => <Link key={item.label} to={item.href} onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">{item.label}</Link>)}
-                <a href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">WhatsApp Support</a>
               </nav>
             )}
           </div>
@@ -258,7 +257,7 @@ const Index = () => {
           <h2 className="text-3xl font-light leading-tight text-primary">Fast Account Help Through WhatsApp</h2>
           <p className="mx-auto mt-4 max-w-[880px] leading-7">Pick your issue and open WhatsApp support directly. The team will guide you with new ID setup, login problems, deposit confirmation, withdrawal updates, KYC help, and bonus details.</p>
           <div className="mt-6 grid gap-4 md:grid-cols-3">
-            {chatPrompts.slice(0, 3).map((prompt) => <a key={prompt} href={whatsappUrl} target="_blank" rel="noreferrer" className="rounded-md bg-card p-5 text-left shadow-panel transition hover:-translate-y-1"><span className="text-2xl">💬</span><h3 className="mt-3 text-xl font-black text-primary">{prompt}</h3><p className="mt-2 text-sm leading-6">Tap to continue this request directly with the support team on WhatsApp.</p></a>)}
+            {chatPrompts.slice(0, 3).map((prompt) => <div key={prompt} className="rounded-md bg-card p-5 text-left shadow-panel"><span className="text-2xl">💬</span><h3 className="mt-3 text-xl font-black text-primary">{prompt}</h3><p className="mt-2 text-sm leading-6">Contact the support team on WhatsApp for assistance.</p></div>)}
           </div>
         </section>
 

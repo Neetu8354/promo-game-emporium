@@ -81,9 +81,6 @@ const BlogPost = () => {
             {navItems.map((item) => <Link key={item.label} to={item.href} className="hover:text-primary">{item.label}</Link>)}
           </nav>
           <div className="flex items-center gap-2">
-            <Button asChild variant="whatsapp" size="icon" className="rounded-md lg:hidden">
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp Lotus365 IDs"><MessageCircle className="size-6" /></a>
-            </Button>
             <Button asChild variant="gold" className="hidden rounded-xl px-4 py-2 font-black lg:flex">
               <Link to="/login">Login</Link>
             </Button>
@@ -94,8 +91,7 @@ const BlogPost = () => {
           {menuOpen && (
             <nav className="absolute right-3 top-16 grid w-[min(18rem,calc(100vw-1.5rem))] gap-1 rounded-md border border-border bg-card p-2 text-base font-medium shadow-panel lg:hidden" aria-label="Mobile navigation">
               {navItems.map((item) => <Link key={item.label} to={item.href} onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">{item.label}</Link>)}
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">WhatsApp Support</a>
-            </nav>
+              </nav>
           )}
         </header>
 
@@ -147,9 +143,6 @@ const BlogPost = () => {
               <Link key={item.slug} to={`/blog/${item.slug}`} className="rounded-md bg-card p-3 text-sm font-black uppercase leading-snug text-foreground shadow-panel">{item.title}</Link>
             ))}
           </div>
-          <Button asChild className="mt-5 h-11 w-full rounded-md text-base font-black">
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Ask Lotus365 IDs Support</a>
-          </Button>
         </section>
 
         <Button asChild variant="secondary" className="fixed inset-x-0 bottom-0 z-50 mx-auto h-[70px] w-full max-w-[520px] rounded-t-md rounded-b-none text-xl font-black text-secondary-foreground shadow-panel sm:text-2xl">

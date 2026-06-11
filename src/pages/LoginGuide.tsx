@@ -59,9 +59,6 @@ const LoginGuide = () => {
           {navItems.map((item) => <Link key={item.label} to={item.href} className="hover:text-primary">{item.label}</Link>)}
         </nav>
         <div className="flex items-center gap-2">
-          <Button asChild variant="whatsapp" size="icon" className="rounded-md lg:hidden">
-            <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp Lotus365 IDs"><MessageCircle className="size-6" /></a>
-          </Button>
           <Button asChild variant="gold" className="hidden rounded-xl px-4 py-2 font-black lg:flex">
             <Link to="/login">Login</Link>
           </Button>
@@ -72,7 +69,6 @@ const LoginGuide = () => {
         {menuOpen && (
           <nav className="absolute right-3 top-16 grid w-[min(18rem,calc(100vw-1.5rem))] gap-1 rounded-md border border-border bg-card p-2 text-base font-medium shadow-panel lg:hidden" aria-label="Mobile navigation">
             {navItems.map((item) => <Link key={item.label} to={item.href} onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">{item.label}</Link>)}
-            <a href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">WhatsApp Support</a>
           </nav>
         )}
       </header>
@@ -108,9 +104,6 @@ const LoginGuide = () => {
         <p className="mt-4 text-base font-semibold leading-7 text-foreground/90">
           Contact support for Lotus365 IDs withdrawal pending help, payment update support, KYC document guidance, bonus claim eligibility, casino login issues, and cricket match ID access assistance.
         </p>
-        <Button asChild className="mt-5 h-11 w-full rounded-md text-base font-black">
-          <a href={whatsappUrl} target="_blank" rel="noreferrer">Get Login Help Now</a>
-        </Button>
       </section>
 
       <section className="bg-background px-5 pt-8 sm:px-8 lg:px-12">

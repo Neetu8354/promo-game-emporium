@@ -125,9 +125,6 @@ const LotusPage = ({ pageKey }: { pageKey: PageKey }) => {
             {navItems.map((item) => <Link key={item.label} to={item.href} className="hover:text-primary">{item.label}</Link>)}
           </nav>
           <div className="flex items-center gap-2">
-            <Button asChild variant="whatsapp" size="icon" className="rounded-md lg:hidden">
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp Lotus365 IDs"><MessageCircle className="size-6" /></a>
-            </Button>
             <Button asChild variant="gold" className="hidden rounded-xl px-4 py-2 font-black lg:flex">
               <Link to="/login">Login</Link>
             </Button>
@@ -138,7 +135,6 @@ const LotusPage = ({ pageKey }: { pageKey: PageKey }) => {
           {menuOpen && (
             <nav className="absolute right-3 top-16 grid w-[min(18rem,calc(100vw-1.5rem))] gap-1 rounded-md border border-border bg-card p-2 text-base font-medium shadow-panel lg:hidden" aria-label="Mobile navigation">
               {navItems.map((item) => <Link key={item.label} to={item.href} onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">{item.label}</Link>)}
-              <a href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">WhatsApp Support</a>
             </nav>
           )}
         </div>
@@ -151,7 +147,6 @@ const LotusPage = ({ pageKey }: { pageKey: PageKey }) => {
           <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-foreground/90 sm:text-lg lg:mx-0">{page.text}</p>
           <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
             <Button asChild variant="gold" className="h-12 rounded-md px-8 font-black"><a href={whatsappUrl} target="_blank" rel="noreferrer">Get ID Now</a></Button>
-            <Button asChild variant="whatsapp" className="h-12 rounded-md px-8 font-black text-secondary-foreground"><a href={whatsappUrl} target="_blank" rel="noreferrer">24x7 Support</a></Button>
           </div>
         </div>
 
@@ -167,7 +162,6 @@ const LotusPage = ({ pageKey }: { pageKey: PageKey }) => {
             <Input className="h-12 border-border bg-background text-center font-medium text-foreground placeholder:text-foreground/70" placeholder="Username / Mobile Number" aria-label="Username or mobile number" />
             <Input className="h-12 border-border bg-background text-center font-medium text-foreground placeholder:text-foreground/70" type="password" placeholder="Password" aria-label="Password" />
             <Button asChild variant="gold" className="h-12 text-base font-black"><a href={whatsappUrl} target="_blank" rel="noreferrer">Login Now</a></Button>
-            <Button asChild variant="whatsapp" className="h-12 text-base font-black text-secondary-foreground"><a href={whatsappUrl} target="_blank" rel="noreferrer">Create New ID</a></Button>
           </form>
         </section>
       )}

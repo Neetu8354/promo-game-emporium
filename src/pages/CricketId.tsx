@@ -156,9 +156,6 @@ const CricketId = () => {
           {navItems.map((item) => <Link key={item.label} to={item.href} className="hover:text-primary">{item.label}</Link>)}
         </nav>
         <div className="flex items-center gap-2">
-          <Button asChild variant="whatsapp" size="icon" className="rounded-md lg:hidden">
-            <a href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="WhatsApp Lotus365 IDs"><MessageCircle className="size-6" /></a>
-          </Button>
           <Button asChild variant="gold" className="hidden rounded-xl px-4 py-2 font-black lg:flex">
             <Link to="/login">Login</Link>
           </Button>
@@ -169,7 +166,6 @@ const CricketId = () => {
         {menuOpen && (
           <nav className="absolute right-3 top-16 grid w-[min(18rem,calc(100vw-1.5rem))] gap-1 rounded-md border border-border bg-card p-2 text-base font-medium shadow-panel lg:hidden" aria-label="Mobile navigation">
             {navItems.map((item) => <Link key={item.label} to={item.href} onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">{item.label}</Link>)}
-            <a href={whatsappUrl} target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="rounded-md px-3 py-2 hover:bg-background hover:text-primary">WhatsApp Support</a>
           </nav>
         )}
       </header>
@@ -189,9 +185,6 @@ const CricketId = () => {
           <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Button asChild variant="gold" className="h-12 rounded-md px-8 text-base font-black">
               <a href={whatsappUrl} target="_blank" rel="noreferrer">Get My Cricket ID Now</a>
-            </Button>
-            <Button asChild variant="whatsapp" className="h-12 rounded-md px-8 text-base font-black text-secondary-foreground">
-              <a href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle className="!size-5" /> Chat on WhatsApp</a>
             </Button>
           </div>
           <p className="mt-4 text-xs font-black uppercase tracking-wide text-foreground/80">⚡ Only a few IDs left this IPL match week — activate yours before the next toss</p>
@@ -243,11 +236,6 @@ const CricketId = () => {
             </li>
           ))}
         </ol>
-        <div className="mt-6 flex justify-center">
-          <Button asChild variant="gold" className="h-12 rounded-md px-8 text-base font-black">
-            <a href={whatsappUrl} target="_blank" rel="noreferrer">Start Step 1 — Open WhatsApp Now</a>
-          </Button>
-        </div>
       </section>
 
       {/* COMPARISON TABLE */}
@@ -376,9 +364,6 @@ const CricketId = () => {
           <div className="mt-6 flex flex-col items-center justify-center gap-3 sm:flex-row sm:flex-wrap">
             <Button asChild variant="gold" className="h-12 rounded-md px-8 text-base font-black">
               <a href={whatsappUrl} target="_blank" rel="noreferrer">⚡ Activate My Cricket ID</a>
-            </Button>
-            <Button asChild variant="whatsapp" className="h-12 rounded-md px-8 text-base font-black text-secondary-foreground">
-              <a href={whatsappUrl} target="_blank" rel="noreferrer"><MessageCircle className="!size-5" /> Chat With a Real Agent</a>
             </Button>
             <Button asChild variant="secondary" className="h-12 rounded-md px-8 text-base font-black text-secondary-foreground">
               <Link to="/signup">Create New ID</Link>
