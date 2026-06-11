@@ -9,7 +9,6 @@ const whatsappUrl = "https://wa.link/reddyanna_";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "Login", href: "/login" },
   { label: "Sign Up", href: "/signup" },
   { label: "About Us", href: "/about-us" },
   { label: "Lotusexchange", href: "/lotusexchange" },
