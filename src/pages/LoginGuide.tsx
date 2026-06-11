@@ -12,7 +12,6 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Login", href: "/login" },
   { label: "Sign Up", href: "/signup" },
-  { label: "App Download", href: "/app-download" },
   { label: "About Us", href: "/about-us" },
   { label: "Lotusexchange", href: "/lotusexchange" },
   { label: "Lotus Cricket", href: "/lotus-cricket" },

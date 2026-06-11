@@ -20,7 +20,6 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Login", href: "/login" },
   { label: "Sign Up", href: "/signup" },
-  { label: "App Download", href: "/app-download" },
   { label: "About Us", href: "/about-us" },
   { label: "Lotusexchange", href: "/lotusexchange" },
   { label: "Lotus Cricket", href: "/lotus-cricket" },
@@ -31,7 +30,6 @@ const navItems = [
 const actionOptions = [
   { title: "Member Login", text: "Already registered? Jump into login support and pick up right where you left off.", href: "/login", cta: "Login" },
   { title: "Create New ID", text: "New here? Request a fresh Lotus365 ID from the signup page and start playing in minutes.", href: "/signup", cta: "Sign Up" },
-  { title: "App Download", text: "Play on the go — Android or iPhone setup with app install guidance, all in one place.", href: "/app-download", cta: "Download Help" },
   { title: "WhatsApp Support", text: "Questions about login, deposits, withdrawals, bonuses, or KYC? Talk to our team directly.", href: whatsappUrl, cta: "Chat Now", external: true },
 ];
 

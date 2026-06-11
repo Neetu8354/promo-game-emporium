@@ -26,7 +26,6 @@ const App = () => (
           <Route path="/cricket-id" element={<CricketId />} />
           <Route path="/login" element={<LotusPage pageKey="login" />} />
           <Route path="/signup" element={<LotusPage pageKey="signup" />} />
-          <Route path="/app-download" element={<LotusPage pageKey="app-download" />} />
           <Route path="/about-us" element={<LotusPage pageKey="about-us" />} />
           <Route path="/lotusexchange" element={<LotusPage pageKey="lotusexchange" />} />
           <Route path="/lotus-cricket" element={<LotusPage pageKey="lotus-cricket" />} />
