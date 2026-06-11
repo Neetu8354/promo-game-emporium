@@ -67,12 +67,12 @@ const pages = {
     imageAlt: "Claim a welcome bonus on Lotusexchange and win bigger rewards",
   },
   "lotus-cricket": {
-    title: "Lotus Cricket ID Help | IPL & Live Match Support",
-    description: "Lotus Cricket ID help for IPL betting, live cricket markets, sports support, casino access, payments, and quick WhatsApp assistance.",
+    title: "Lotus Cricket – Live Cricket Experience, Match Insights & Real-Time Updates",
+    description: "Lotus Cricket is a dedicated destination for cricket enthusiasts — live updates, IPL betting markets, match schedules, real-time scores, player insights, and secure cricket ID support.",
     canonical: `${siteUrl}/lotus-cricket`,
     eyebrow: "Lotus Cricket",
-    heading: "Lotus 365 India — Complete Cricket, Casino, and Sports Support",
-    text: "Get guidance for cricket IDs, IPL markets, football, tennis, kabaddi, live casino games, payment help, and account access — all in one place.",
+    heading: "Lotus Cricket – Live Cricket Experience, Match Insights & Real-Time Updates",
+    text: "Lotus Cricket is a dedicated destination for cricket enthusiasts who want to stay connected with every moment of the game. From international tournaments and T20 leagues to ODI and Test matches, Lotus Cricket offers live updates, match information, team statistics, player insights, and real-time score tracking.",
     image: exploreImage,
     imageAlt: "Bet online on live IPL matches with a lotus365ids.live cricket ID",
   },
@@ -87,6 +87,29 @@ const pages = {
     imageAlt: "Chat with lotus365ids.live on WhatsApp and get a cricket ID instantly",
   },
 };
+
+const cricketFaqs = [
+  { q: "What is Lotus365IDs Cricket?", a: "Lotus365IDs Cricket is a dedicated platform where cricket enthusiasts can access live cricket betting markets, real-time odds, match updates, and secure betting services. The platform covers major cricket tournaments from around the world, including the IPL, ICC Cricket World Cup, T20 World Cup, Champions Trophy, Asia Cup, Big Bash League, Pakistan Super League, and many other domestic and international competitions." },
+  { q: "How can I get a Lotus365IDs Cricket ID?", a: "Getting a Lotus365IDs Cricket ID is quick and straightforward. Simply contact our support team through WhatsApp or the official registration channels, provide the required basic information, complete the verification process, and receive your login credentials. Once your account is activated, you can deposit funds and start accessing live cricket markets immediately." },
+  { q: "Why should I choose Lotus365IDs for cricket betting?", a: "Lotus365IDs offers a secure and user-friendly betting environment with competitive odds, instant account activation, fast withdrawals, live match tracking, and reliable customer support. The platform is designed specifically for Indian cricket fans who want a smooth and efficient betting experience." },
+  { q: "Does Lotus365IDs cover IPL betting?", a: "Yes, Lotus365IDs provides extensive IPL betting markets throughout the season. Users can place bets on match winners, top batsmen, top bowlers, session results, total runs, player performances, and many other betting options." },
+  { q: "Can I bet on international cricket matches through Lotus365IDs?", a: "Absolutely. Lotus365IDs covers international cricket events including ICC tournaments, bilateral series, Test matches, One Day Internationals (ODIs), and T20 Internationals. Users can access betting markets before and during live matches." },
+  { q: "Is Lotus365IDs available on mobile devices?", a: "Yes, Lotus365IDs is fully optimized for mobile users. Whether you use Android, iPhone, or a tablet, you can access your account, place bets, monitor odds, and manage transactions directly from your device." },
+  { q: "How secure is Lotus365IDs?", a: "Security is a top priority at Lotus365IDs. The platform uses advanced encryption technologies, secure payment gateways, and strict verification procedures to protect user information and financial transactions." },
+  { q: "What payment methods are supported on Lotus365IDs?", a: "Lotus365IDs supports a variety of payment options commonly used in India, including UPI, bank transfers, digital wallets, and other secure online payment methods." },
+  { q: "How quickly are withdrawals processed?", a: "Withdrawal requests on Lotus365IDs are processed as quickly as possible. The platform is known for fast settlements and smooth transaction handling." },
+  { q: "Does Lotus365IDs offer live cricket betting?", a: "Yes, live cricket betting is one of the key features of Lotus365IDs. Users can place bets while the match is in progress, with odds updating in real time based on match situations." },
+  { q: "What cricket betting markets are available on Lotus365IDs?", a: "Lotus365IDs offers a wide range of cricket betting markets including match winner, toss winner, session betting, total runs, total wickets, player performance bets, top batsman, top bowler, partnership runs, over-by-over betting, and many other specialized markets." },
+  { q: "Can beginners use Lotus365IDs?", a: "Yes. Lotus365IDs is designed to accommodate both new and experienced users. The platform offers a simple interface, easy navigation, and support assistance to help beginners understand the betting process." },
+  { q: "Is customer support available 24/7?", a: "Yes, Lotus365IDs provides round-the-clock customer support. Users can contact the support team through WhatsApp and other official channels for assistance with registration, account management, deposits, withdrawals, and general inquiries." },
+  { q: "How do I log in to my Lotus365IDs Cricket account?", a: "After receiving your Cricket ID and password, simply visit the official Lotus365IDs website, enter your login credentials, complete any required verification steps, and access your account." },
+  { q: "What makes Lotus365IDs different from other cricket betting platforms?", a: "Lotus365IDs stands out because of its quick account approval process, competitive cricket odds, reliable payment systems, fast withdrawals, secure infrastructure, and dedicated customer support tailored to Indian users." },
+  { q: "Can I track live scores on Lotus365IDs?", a: "Yes, Lotus365IDs provides real-time cricket score updates, live match information, and ongoing match statistics. Users can stay informed about match developments while accessing betting opportunities simultaneously." },
+  { q: "Does Lotus365IDs provide betting options for ICC tournaments?", a: "Yes, users can access betting markets for major ICC events including the ICC Cricket World Cup, ICC T20 World Cup, ICC Champions Trophy, and other international cricket competitions." },
+  { q: "Is registration mandatory to use Lotus365IDs?", a: "Yes, users must register and obtain a valid Cricket ID before accessing betting services. Registration helps maintain account security and ensures a safe betting environment." },
+  { q: "Can I use Lotus365IDs throughout the year?", a: "Yes, Lotus365IDs operates year-round and provides access to cricket betting markets across multiple tournaments and international series. There is always cricket action available." },
+  { q: "How can I contact Lotus365IDs support?", a: "You can contact Lotus365IDs support through the official WhatsApp channel or the customer support section on the website. The support team is available to help with account setup, verification, transactions, and technical assistance." },
+];
 
 const contactHelpTopics = [
   { title: "New Cricket ID Support", text: "Ask for help on WhatsApp with creating a Lotus365 cricket ID, mobile verification, first login steps, and account setup guidance." },
@@ -171,6 +194,25 @@ const LotusPage = ({ pageKey }: { pageKey: PageKey }) => {
           </article>
         </div>
       </section>
+
+      {pageKey === "lotus-cricket" && (
+        <section className="mx-auto max-w-[1180px] px-4 pb-12 sm:px-6 lg:px-8">
+          <div className="border-t border-border pt-8">
+            <h2 className="text-3xl font-light leading-tight text-primary">Frequently Asked Questions — Lotus365IDs Cricket</h2>
+            <p className="mt-4 max-w-[900px] text-base leading-7 text-foreground/90">
+              Whether you follow the IPL, ICC tournaments, bilateral series, or domestic cricket competitions, Lotus Cricket provides easy access to match schedules, scorecards, player performances, and detailed cricket analysis. The platform is optimized for mobile and desktop users, ensuring a smooth experience across all devices.
+            </p>
+            <div className="mt-6 grid gap-3">
+              {cricketFaqs.map((faq) => (
+                <details key={faq.q} className="group rounded-md border border-border bg-card p-4 shadow-panel">
+                  <summary className="cursor-pointer text-base font-black text-primary">{faq.q}</summary>
+                  <p className="mt-3 text-sm leading-6 text-foreground/85">{faq.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {pageKey === "contact-us" && (
         <section className="mx-auto max-w-[1180px] px-4 pb-12 sm:px-6 lg:px-8">
