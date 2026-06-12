@@ -57,14 +57,14 @@ const pages = {
     imageAlt: "lotus365ids.live — a trusted online sports gaming platform for Indian players",
   },
   lotusexchange: {
-    title: "Lotusexchange Bonus Help | Lotus365 Offers Support",
-    description: "Lotusexchange bonus help for welcome offers, deposit rewards, referral support, weekly contests, festival specials, and VIP club information.",
+    title: "Lotus365 IDs – Get Trusted Lotus365 ID for Cricket, Sports & Casino Games",
+    description: "Get your Lotus365 ID and enjoy access to cricket betting, live sports, casino games, secure transactions, fast withdrawals, and 24/7 support on one trusted platform.",
     canonical: `${siteUrl}/lotusexchange`,
-    eyebrow: "Lotusexchange",
-    heading: "Exclusive Lotus 365 Club Bonuses for Indian Players",
-    text: "Welcome bonuses, deposit rewards, referral offers, weekly contests, festival specials, and Lotus 365 Club VIP details — find support for all of them here.",
+    eyebrow: "Lotus365 IDs",
+    heading: "Lotus365 IDs – Get Your Trusted Lotus365 ID for Sports & Casino Gaming",
+    text: "Join Lotus365 and Access Premium Sports Betting & Casino Entertainment. Lotus365 IDs provide users with access to one of the most popular online sports and gaming platforms. Whether you're interested in cricket, football, tennis, live casino games, or virtual gaming, Lotus365 offers a user-friendly experience with fast transactions and round-the-clock support.",
     image: bonusImage,
-    imageAlt: "Claim a welcome bonus on Lotusexchange and win bigger rewards",
+    imageAlt: "Get your Lotus365 ID for cricket betting, sports and casino gaming on lotus365ids.live",
   },
   "lotus-cricket": {
     title: "Lotus Cricket – Live Cricket Experience, Match Insights & Real-Time Updates",
@@ -109,6 +109,17 @@ const cricketFaqs = [
   { q: "Is registration mandatory to use Lotus365IDs?", a: "Yes, users must register and obtain a valid Cricket ID before accessing betting services. Registration helps maintain account security and ensures a safe betting environment." },
   { q: "Can I use Lotus365IDs throughout the year?", a: "Yes, Lotus365IDs operates year-round and provides access to cricket betting markets across multiple tournaments and international series. There is always cricket action available." },
   { q: "How can I contact Lotus365IDs support?", a: "You can contact Lotus365IDs support through the official WhatsApp channel or the customer support section on the website. The support team is available to help with account setup, verification, transactions, and technical assistance." },
+];
+
+const lotusexchangeFaqs = [
+  { q: "What is a Lotus365 ID?", a: "A Lotus365 ID is your personal account that allows you to access sports markets, live casino games, virtual sports, and various online gaming features available on the Lotus365 platform. With a single ID, users can manage their account, track activity, deposit funds, and explore multiple entertainment options from one dashboard." },
+  { q: "Is Lotus365 mobile-friendly?", a: "Yes, the platform is optimized for smartphones, tablets, and desktop devices." },
+  { q: "What sports are available on Lotus365?", a: "Cricket, football, tennis, kabaddi, basketball, and several other sports are available." },
+  { q: "Can I access live betting markets?", a: "Yes, Lotus365 offers live sports markets with real-time updates." },
+  { q: "Are casino games available?", a: "Yes, users can access live casino games, poker, blackjack, roulette, Teen Patti, and more." },
+  { q: "Is customer support available?", a: "Yes, support services are available to help users with account-related queries." },
+  { q: "Can I use Lotus365 on my phone?", a: "Yes, the platform is designed for both Android and iOS users through mobile browsers and supported applications." },
+  { q: "Why is Lotus365 popular?", a: "Its combination of sports coverage, casino games, user-friendly design, and secure transactions makes it a preferred choice for many users." },
 ];
 
 const contactHelpTopics = [
@@ -204,6 +215,121 @@ const LotusPage = ({ pageKey }: { pageKey: PageKey }) => {
             </p>
             <div className="mt-6 grid gap-3">
               {cricketFaqs.map((faq) => (
+                <details key={faq.q} className="group rounded-md border border-border bg-card p-4 shadow-panel">
+                  <summary className="cursor-pointer text-base font-black text-primary">{faq.q}</summary>
+                  <p className="mt-3 text-sm leading-6 text-foreground/85">{faq.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {pageKey === "lotusexchange" && (
+        <section className="mx-auto max-w-[1180px] px-4 pb-12 sm:px-6 lg:px-8">
+          <div className="border-t border-border pt-8">
+            <h2 className="text-2xl font-light leading-tight text-primary">What is a Lotus365 ID?</h2>
+            <p className="mt-4 max-w-[900px] text-base leading-7 text-foreground/90">
+              A Lotus365 ID is your personal account that allows you to access sports markets, live casino games, virtual sports, and various online gaming features available on the Lotus365 platform. With a single ID, users can manage their account, track activity, deposit funds, and explore multiple entertainment options from one dashboard.
+            </p>
+
+            <h2 className="mt-10 text-2xl font-light leading-tight text-primary">Why Choose Lotus365 IDs?</h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-xl font-black text-primary">Secure Platform</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Advanced security measures help protect user information and transactions, providing a safer online experience.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-xl font-black text-primary">Cricket Betting Markets</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Access major cricket tournaments, including IPL, T20 leagues, ODIs, and Test matches with live updates and multiple market options.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-xl font-black text-primary">Live Casino Games</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Enjoy live dealer games, roulette, blackjack, baccarat, poker, Teen Patti, and other interactive gaming experiences.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-xl font-black text-primary">Fast Deposits & Withdrawals</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">The platform supports quick payment processing and convenient transaction methods.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-xl font-black text-primary">Mobile-Friendly Experience</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Play directly from your smartphone, tablet, or desktop without compromising performance.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-xl font-black text-primary">24/7 Customer Support</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Dedicated support channels help users resolve account-related queries whenever needed.</p>
+              </article>
+            </div>
+
+            <h2 className="mt-10 text-2xl font-light leading-tight text-primary">Features of Lotus365 IDs</h2>
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                "Instant account access",
+                "Live sports markets",
+                "Real-time odds updates",
+                "Multiple gaming categories",
+                "Secure payment options",
+                "Fast account management",
+                "Mobile compatibility",
+                "User-friendly interface",
+                "Dedicated customer support",
+                "Quick registration process",
+              ].map((feature) => (
+                <div key={feature} className="flex items-center gap-3 rounded-md border border-border bg-card p-3">
+                  <div className="h-2 w-2 rounded-full bg-primary"></div>
+                  <span className="text-sm font-medium">{feature}</span>
+                </div>
+              ))}
+            </div>
+
+            <h2 className="mt-10 text-2xl font-light leading-tight text-primary">Sports Available on Lotus365</h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-lg font-black text-primary">Cricket</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Explore betting opportunities on IPL, international matches, domestic leagues, and major cricket tournaments.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-lg font-black text-primary">Football</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Access markets covering domestic leagues, international tournaments, and live football matches.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-lg font-black text-primary">Tennis</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Follow ATP, WTA, Grand Slam events, and live tennis action throughout the year.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-lg font-black text-primary">Kabaddi & Other Sports</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Enjoy additional sports markets including kabaddi, basketball, and more.</p>
+              </article>
+            </div>
+
+            <h2 className="mt-10 text-2xl font-light leading-tight text-primary">How to Get a Lotus365 ID</h2>
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-lg font-black text-primary">Step 1</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Complete the registration process with basic account information.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-lg font-black text-primary">Step 2</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Verify your details as required.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-lg font-black text-primary">Step 3</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Activate your account and access the platform.</p>
+              </article>
+              <article className="rounded-md bg-card p-4 shadow-panel">
+                <h3 className="text-lg font-black text-primary">Step 4</h3>
+                <p className="mt-2 text-sm leading-6 text-foreground/85">Explore sports, casino games, and other available entertainment options.</p>
+              </article>
+            </div>
+
+            <h2 className="mt-10 text-2xl font-light leading-tight text-primary">Why Users Prefer Lotus365</h2>
+            <p className="mt-4 max-w-[900px] text-base leading-7 text-foreground/90">
+              Users appreciate Lotus365 for its easy navigation, live betting features, secure transactions, mobile accessibility, and broad range of sports and gaming options. The platform continues to attract sports enthusiasts looking for a smooth and reliable online gaming experience.
+            </p>
+
+            <h2 className="mt-10 text-2xl font-light leading-tight text-primary">FAQs</h2>
+            <div className="mt-6 grid gap-3">
+              {lotusexchangeFaqs.map((faq) => (
                 <details key={faq.q} className="group rounded-md border border-border bg-card p-4 shadow-panel">
                   <summary className="cursor-pointer text-base font-black text-primary">{faq.q}</summary>
                   <p className="mt-3 text-sm leading-6 text-foreground/85">{faq.a}</p>
