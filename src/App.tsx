@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 const Blog = lazy(() => import("./pages/Blog.tsx"));
 const BlogPost = lazy(() => import("./pages/BlogPost.tsx"));
 const CricketId = lazy(() => import("./pages/CricketId.tsx"));
+const CricketIdUpiDeposit = lazy(() => import("./pages/CricketIdUpiDeposit.tsx"));
 const Index = lazy(() => import("./pages/Index.tsx"));
 const LoginGuide = lazy(() => import("./pages/LoginGuide.tsx"));
 const LotusPage = lazy(() => import("./pages/LotusPage.tsx"));
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/lotus365live-login-guide" element={<LoginGuide />} />
           <Route path="/cricket-id" element={<CricketId />} />
+          <Route path="/cricket-id-upi-deposit-ipl-2026" element={<CricketIdUpiDeposit />} />
           <Route path="/login" element={<LotusPage pageKey="login" />} />
           <Route path="/signup" element={<LotusPage pageKey="signup" />} />
           <Route path="/about-us" element={<LotusPage pageKey="about-us" />} />
