@@ -31,7 +31,7 @@ const BonusWhatsAppPopup = ({ whatsappUrl }: BonusWhatsAppPopupProps) => {
 
       {/* Popup container */}
       <div
-        className="fixed bottom-4 right-4 z-50 w-full max-w-xs sm:bottom-6 sm:right-6 animate-in fade-in slide-in-from-bottom-4 duration-500"
+        className="fixed left-1/2 top-1/2 z-50 w-full max-w-sm -translate-x-1/2 -translate-y-1/2 animate-in fade-in zoom-in-95 duration-500"
         role="dialog"
         aria-labelledby="popup-title"
         aria-modal="true"
