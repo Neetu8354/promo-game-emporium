@@ -78,8 +78,11 @@ export default {
         "panel-gradient": "var(--gradient-panel)",
       },
       fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-        serif: ['"Playfair Display"', 'ui-serif', 'Georgia', 'serif'],
+        sans: ['Manrope', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        serif: ['Fraunces', 'ui-serif', 'Georgia', 'serif'],
+      },
+      backgroundImage: {
+        "mesh-gradient": "var(--gradient-mesh)",
       },
       boxShadow: {
         gold: "var(--shadow-gold)",

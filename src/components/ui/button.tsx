@@ -15,7 +15,7 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        gold: "bg-gold-gradient text-primary-foreground shadow-gold transition-transform hover:-translate-y-0.5 hover:shadow-panel",
+        gold: "relative overflow-hidden bg-gold-gradient text-primary-foreground shadow-gold transition-all hover:-translate-y-0.5 hover:shadow-[0_30px_70px_-20px_hsl(var(--primary)/0.6)] before:absolute before:inset-0 before:-translate-x-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-transform before:duration-700 hover:before:translate-x-full",
         whatsapp: "bg-whatsapp text-accent-foreground shadow-panel transition-transform hover:-translate-y-0.5 hover:brightness-110",
       },
       size: {
