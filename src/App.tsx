@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import BonusWhatsAppPopup from "@/components/BonusWhatsAppPopup";
 
 const Blog = lazy(() => import("./pages/Blog.tsx"));
 const BlogPost = lazy(() => import("./pages/BlogPost.tsx"));
@@ -12,10 +13,13 @@ const LoginGuide = lazy(() => import("./pages/LoginGuide.tsx"));
 const LotusPage = lazy(() => import("./pages/LotusPage.tsx"));
 const NotFound = lazy(() => import("./pages/NotFound.tsx"));
 
+const whatsappUrl = "https://wa.link/reddyanna_";
+
 const App = () => (
   <TooltipProvider>
     <Toaster />
     <Sonner />
+    <BonusWhatsAppPopup whatsappUrl={whatsappUrl} />
     <BrowserRouter>
       <Suspense fallback={null}>
         <Routes>
